@@ -1,0 +1,13 @@
+$schema: "1.0"
+name: "basic-definition"
+description: "This is a basic definition Contoso Engineering Teams"
+
+image: "microsoftvisualstudio_windowsplustools_base-win11-gen2"
+enableScheduledRefresh: true
+scheduledTimePeriod: hour
+scheduledRecurrence: 24
+
+tasks:
+  - name: winget
+    parameters:
+      downloadUrl: 'https://raw.githubusercontent.com/contoso-co/common-eng-sys/main/dsc-configurations/common-config.dsc.yaml'
